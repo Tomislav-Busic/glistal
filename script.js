@@ -1,4 +1,10 @@
- $(document).ready(function(){
+const tl = gsap.timeline({defaults: { ease: "power1.out" } }); 
+
+tl.fromTo(".home .back-img img", { opacity: 0}, { opacity: 1, duration: 1});
+tl.fromTo(".home-content", { opacity: 0}, { opacity: 1, duration: 3});
+tl.fromTo(".navbar", { opacity: 0}, { opacity: 1, duration: 4}, "-=3");
+
+$(document).ready(function(){
     $(window).scroll(function(){
         if(this.scrollY > 20){
             $('.navbar').addClass("sticky");
