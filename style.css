@@ -32,7 +32,7 @@ html{
 
 .navbar.sticky{
     padding: 15px 0;
-    background: #333;
+    background: black;
 }
 
 .navbar .max-width{
@@ -295,13 +295,14 @@ section .title::after{
 .about .about-content .right{
     background-image: url("./pic/background3.png");
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
+    background-attachment: fixed;
     width: 55%;
 }
 
 .about .about-content .right .text{
     font-size: 23px;
-    font-weight: 200;
+    font-weight: 400;
     margin-bottom: 10px;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -361,6 +362,10 @@ section .title::after{
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+}
+
+.works .carousel .card .box p{
+    font-weight: 400;
 }
 
 .works .carousel .card:hover .box{
@@ -651,6 +656,7 @@ footer span a:hover{
         width: 100%;
         left: -100%;
         top: 0;
+        z-index: 999;
         background: #111;
         text-align: center;
         padding-top: 80px;
