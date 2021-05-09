@@ -32,7 +32,7 @@ html{
 
 .navbar.sticky{
     padding: 15px 0;
-    background: black;
+    background: #222;
 }
 
 .navbar .max-width{
@@ -291,8 +291,8 @@ section .title::after{
 }
 
 .about .about-content .left img{
-    height: 400px;
-    width: 400px;
+    height: 450px;
+    width: 450px;
     object-fit: cover;
     border-radius: 6px;
 }
@@ -319,7 +319,7 @@ section .title::after{
 
 .works{
     color: #fff;
-    background: #111;
+    background: #026a39;
 }
 
 .title::before,
@@ -329,8 +329,7 @@ section .title::after{
 
 .title::after,
 .works .title::after{
-    background: #111;
-    content: "what i provide";
+    background: #026a39;
 }
 
 
@@ -338,6 +337,7 @@ section .title::after{
 
 .works .title::after{
     content: "Galerija";
+    color: black;
 } 
 
 .works .carousel .card{
@@ -346,10 +346,6 @@ section .title::after{
     padding: 25px 35px;
     text-align: center;
     transition: all 0.3s ease;
-}
-
-.works .carousel .card .box a{
-    color: #9f041b;
 }
 
 .works .carousel .card:hover{
@@ -381,7 +377,7 @@ section .title::after{
     font-size: 25px;
     font-weight: 900;
     margin: 10px 0 7px 0;
-    color: #9f041b;
+    color: #026a39;
 }
 
 .works .carousel .card img{
@@ -389,7 +385,7 @@ section .title::after{
     width: 200px;
     object-fit: cover;
     border-radius: 5px;
-    border: 5px solid #9f041b;
+    border: 5px solid #026a39;
     transition: all 0.3s ease;
 }
 
@@ -411,7 +407,7 @@ section .title::after{
     margin: 0 5px;
     outline: none!important;
     border-radius: 50%;
-    border: 2px solid #9f041b!important;
+    border: 2px solid #000000!important;
     transition: all 0.3s ease;
 }
 .owl-dot.active{
@@ -420,7 +416,7 @@ section .title::after{
 }
 .owl-dot.active,
 .owl-dot:hover{
-    background: #9f041b!important;
+    background: #000000!important;
 }
 
 /*VIDEO*/
@@ -444,7 +440,7 @@ iframe {
 /*PARTNERI*/
 .partneri {
     color: #fff;
-    background: #111;
+    background: #026a39;
 }
 
 .partneri .title::before{
@@ -453,7 +449,8 @@ iframe {
 
 .partneri .title::after{
     content: "iskustva";
-    background: #111;
+    background: #026a39;
+    color: black;
 }
 
 .partneri .carousel .card{
@@ -488,14 +485,14 @@ iframe {
     font-size: 25px;
     font-weight: 900;
     margin: 10px 0 7px 0;
-    color: #9f041b;
+    color: #026a39;
 }
 .partneri .carousel .card img{
     height: 150px;
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid #9f041b;
+    border: 5px solid #026a39;
     transition: all 0.3s ease;
 }
 .partneri .carousel .card:hover img{
