@@ -32,7 +32,7 @@ html{
 
 .navbar.sticky{
     padding: 15px 0;
-    background: #222;
+    background: #444;
 }
 
 .navbar .max-width{
@@ -98,7 +98,7 @@ html{
 }
 
 .highlight {
-    border-bottom: 6px solid #9f041b;
+    border-bottom: 6px solid #fff;
     border-radius: 2px;
 }
 
@@ -394,7 +394,7 @@ section .title::after{
 }
 
 .works .carousel .card:hover .text{
-    color: black;
+    color: #444;
 }
 
 .owl-dots{
@@ -487,6 +487,11 @@ iframe {
     margin: 10px 0 7px 0;
     color: #026a39;
 }
+
+.partneri .carousel .card p{
+    font-weight: 500;
+}
+
 .partneri .carousel .card img{
     height: 150px;
     width: 150px;
@@ -500,7 +505,7 @@ iframe {
 }
 
 .partneri .carousel .card:hover a{
-    color: black;
+    color: #444;
 }
 
 /* CONTACT SECTION STYLING */
