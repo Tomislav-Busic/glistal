@@ -68,5 +68,55 @@ $(document).ready(function(){
     });
 });  
 
+//Show active menu when scrolling
+const highlightMenu = () => {
+    const elem = document.querySelector('.highlight');
+    const homeMenu = document.querySelector('#home-page');
+    const aboutMenu = document.querySelector('#about-page');
+    const servicesMenu = document.querySelector('#works-page');
+    const video = document.querySelector('#video-page');
+    const partneri = document.querySelector('#partneri-page');
+    const contact = document.querySelector('#contact-page');
+    let scrollPos = window.scrollY;
+    //console.log(scrollPos);
 
+    //adds 'highlight' class to main menu items
+    if(window.innerWidth > 947 && scrollPos < 600) {
+        homeMenu.classList.add('highlight');
+        aboutMenu.classList.remove('highlight');
+        return;
+    } else if (window.innerWidth > 947 && scrollPos < 1500) {
+        aboutMenu.classList.add('highlight');
+        homeMenu.classList.remove('highlight');
+        servicesMenu.classList.remove('highlight');
+        return;
+    } else if (window.innerWidth > 947 && scrollPos < 2585) {
+        aboutMenu.classList.remove('highlight');
+        servicesMenu.classList.add('highlight');
+        video.classList.remove('highlight');
+        return;
+    } else if (window.innerWidth > 947 && scrollPos < 3700) {
+        servicesMenu.classList.remove('highlight');
+        video.classList.add('highlight');
+        partneri.classList.remove('highlight');
+        return;
+    } else if (window.innerWidth > 947 && scrollPos < 4500) {
+        contact.classList.remove('highlight');
+        video.classList.remove('highlight');
+        partneri.classList.add('highlight');
+        return;
+    } else if (window.innerWidth > 947 && scrollPos < 4900) {
+        partneri.classList.remove('highlight');
+        contact.classList.add('highlight');
+        return;
+    } 
+
+
+    if((elem && window.innerWidth < 946 && scrollPos < 600) || elem) {
+        elem.classList.remove('highlight');
+    }
+}
+
+window.addEventListener('scroll', highlightMenu);
+window.addEventListener('click', highlightMenu);
 

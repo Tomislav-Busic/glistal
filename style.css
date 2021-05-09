@@ -97,6 +97,11 @@ html{
     color: #9f041b;
 }
 
+.highlight {
+    border-bottom: 6px solid #9f041b;
+    border-radius: 2px;
+}
+
 /* MENU BTN STYLING*/
 
 .menu-btn {
@@ -301,8 +306,8 @@ section .title::after{
 }
 
 .about .about-content .right .text{
-    font-size: 23px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 500;
     margin-bottom: 10px;
     font-family: 'Ubuntu', sans-serif;
 }
