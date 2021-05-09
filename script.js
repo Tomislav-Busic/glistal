@@ -95,17 +95,17 @@ const highlightMenu = () => {
         servicesMenu.classList.add('highlight');
         video.classList.remove('highlight');
         return;
-    } else if (window.innerWidth > 947 && scrollPos < 3700) {
+    } else if (window.innerWidth > 947 && scrollPos < 4100) {
         servicesMenu.classList.remove('highlight');
         video.classList.add('highlight');
         partneri.classList.remove('highlight');
         return;
-    } else if (window.innerWidth > 947 && scrollPos < 4500) {
+    } else if (window.innerWidth > 947 && scrollPos < 4900) {
         contact.classList.remove('highlight');
         video.classList.remove('highlight');
         partneri.classList.add('highlight');
         return;
-    } else if (window.innerWidth > 947 && scrollPos < 4900) {
+    } else if (window.innerWidth > 947 && scrollPos < 5800) {
         partneri.classList.remove('highlight');
         contact.classList.add('highlight');
         return;

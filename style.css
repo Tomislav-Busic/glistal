@@ -349,7 +349,7 @@ section .title::after{
 }
 
 .works .carousel .card:hover{
-    background: #9f041b;
+    background: #012916;
     transition: all 0.3s ease;
 }
 
@@ -469,7 +469,7 @@ iframe {
 }
 
 .partneri .carousel .card:hover{
-    background: #9f041b;
+    background: #012916;
 }
 .partneri .carousel .card .box{
     display: flex;
