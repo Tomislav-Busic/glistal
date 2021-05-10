@@ -32,7 +32,7 @@ html{
 
 .navbar.sticky{
     padding: 15px 0;
-    background: #444;
+    background: #222;
 }
 
 .navbar .max-width{
@@ -394,7 +394,7 @@ section .title::after{
 }
 
 .works .carousel .card:hover .text{
-    color: #444;
+    color: #777;
 }
 
 .owl-dots{
@@ -505,7 +505,7 @@ iframe {
 }
 
 .partneri .carousel .card:hover a{
-    color: #444;
+    color: #777;
 }
 
 /* CONTACT SECTION STYLING */
