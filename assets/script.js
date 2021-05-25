@@ -39,7 +39,7 @@ $(document).ready(function(){
     });
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Glistal", "Gliste za kompostiranje", "Granule glistala", "Gliste za ribolov"],
+        strings: ["Glistal", "Gliste za kompost", "Granule glistala", "Gliste za ribolov"],
         typeSpeed: 150,
         backSpeed: 60,
         loop: true

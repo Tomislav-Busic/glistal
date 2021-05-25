@@ -313,7 +313,7 @@ section .title::after{
 }
 
 .about .about-content .right p{
-    text-align: justify;
+    text-align: center;
 }
 
 
@@ -425,6 +425,47 @@ section .title::after{
     content: "nešto detaljnije";
 }
 
+.video .max-width{
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.video .max-width::before,
+.video .max-width::after{
+    content:'';
+    position: absolute;
+    top: 10%;
+    background: url('./pic/background1.png');
+    background-repeat: no-repeat;
+    border-radius: 3rem;
+    background-size: 100%;
+    height: 70rem;
+    width: 60rem;
+    z-index: -2;
+    animation: anime 100s linear infinite;
+}
+
+@keyframes anime{
+    0%{
+        transform: rotate(-145deg) translateY(30%) translateX(10%);
+    }20%{
+        transform: rotate(245deg) translateY(60%) translateX(50%);
+    }30%{
+        transform: rotate(80deg) translateX(40%) translateY(10%);
+    }45%{
+        transform: rotate(-160deg) translateX(0%) translateY(10%);
+    }65%{
+        transform: rotate(80deg) translateX(-10%) translateY(0%);
+    }75%{
+        transform: rotate(360deg) translateY(50%) translateX(50%);
+    }80%{
+        transform: rotate(-180deg) translateY(40%) translateX(0%);
+    }100%{
+        transform: rotate(360deg) translateY(0%) translateX(0%) ;
+    }
+}
+
 iframe {
     display: block;
     margin: 1em auto;
@@ -525,7 +566,6 @@ iframe {
 }
 
 .contact .contact-content .right .map{
-    padding: 10px;
     display: block;
     margin: 1em auto;
     width: 100%;
@@ -640,6 +680,11 @@ footer span a:hover{
         padding-top: 50px;
         margin-left: -40px;
     }
+
+    .video .max-width::before,
+    .video .max-width::after{
+        background-size: 80%;
+    }
 }
 @media (max-width: 947px){
     .navbar .logo a{
@@ -719,6 +764,9 @@ footer span a:hover{
     .max-width{
         padding: 0 23px;
     }
+    .home .back-img img{
+        height: calc(.5000 * 30vh);
+    }
     .home .home-content .text-2{
         font-size: 60px;
     }
@@ -731,6 +779,10 @@ footer span a:hover{
     .home .home-content{
         padding-top: 5px;
         margin-left: -10px;
+    }
+    .video .max-width::before,
+    .video .max-width::after{
+        background-size: 70%;
     }
 }
 
